@@ -1,7 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 812 350" role="img" aria-labelledby="title">
   <title id="title">RAID 2027</title>
-  <rect x="57" y="54" width="704" height="90" fill="#000"/>
-  <rect x="57" y="144" width="349" height="137" fill="#000"/>
+  <rect width="812" height="350" fill="#fff"/>
   <g fill="#e10600" stroke="#fff" stroke-width="1.4">
     <rect x="224" y="58" width="27" height="27" transform="rotate(30 237.5 71.5)"/>
     <rect x="269" y="62" width="27" height="27" transform="rotate(45 282.5 75.5)"/>

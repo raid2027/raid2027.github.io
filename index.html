@@ -3,23 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="RAID 2027, the 30th International Symposium on Research in Attacks, Intrusions and Defenses, in Chicago.">
   <title>RAID 2027 – The 30th International Symposium on Research in Attacks, Intrusions and Defenses</title>
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: #fff;
-      padding: 80px 20px;
-      color: #e10600;
+    :root { font-family: Arial, Helvetica, sans-serif; color: #303b49; background: #fff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    .hero { max-width: 1440px; margin: 18px auto 0; padding: 44px 30px 30px; background: #f7f9fb; border: 1px solid #e0e7ed; border-radius: 18px; text-align: center; }
+    .logo { display: block; width: min(100%, 360px); height: auto; margin: 0 auto 18px; }
+    .location { display: inline-block; margin: 0 0 9px; padding: 10px 20px; border-radius: 999px; color: #9d2323; background: #fde9e9; font-size: 1.05rem; }
+    .subtitle { margin: 0 0 24px; font-size: clamp(1.1rem, 2vw, 1.5rem); font-weight: 500; line-height: 1.4; }
+    .hero-image { display: block; width: 100%; height: clamp(230px, 27vw, 390px); object-fit: cover; object-position: center 58%; }
+    .tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 12px; }
+    .tab { display: inline-block; padding: 12px 17px; border: 2px solid #f1c7c7; border-radius: 9px; background: #fff; color: #303b49; font: inherit; font-size: 1rem; cursor: pointer; }
+    .tab:hover, .tab:focus-visible { border-color: #cf2929; outline: none; }
+    .tab[aria-selected="true"] { border-color: #c82323; background: #c82323; color: #fff; }
+    main { max-width: 1120px; margin: 42px auto 80px; padding: 0 24px; }
+    .panel { line-height: 1.65; font-size: 1.05rem; }
+    .panel[hidden] { display: none; }
+    .panel h1 { margin: 0 0 12px; color: #293442; font-size: 1.8rem; }
+    .panel p { max-width: 850px; margin: 0 0 14px; }
+    footer { max-width: 1120px; margin: 0 auto 28px; padding: 0 24px; color: #66717e; font-size: .82rem; }
+    footer a { color: inherit; }
+    @media (max-width: 600px) {
+      .hero { margin: 0; padding: 16px 12px 20px; border-radius: 0; }
+      .logo { width: min(100%, 290px); margin-bottom: 16px; }
+      .hero-image { height: 230px; }
+      .tab { flex: 1 1 auto; padding: 10px 12px; font-size: .95rem; }
+      main { margin-top: 30px; }
     }
-    .logo { display: block; width: min(100%, 812px); height: auto; margin: 0 auto 24px; }
-    h1 { font-size: 1.5rem; }
   </style>
 </head>
 <body>
-  <img class="logo" src="images/logo_2027.svg" alt="RAID 2027 logo">
-  <h1>RAID 2027 · Chicago</h1>
-  <p>The website is coming soon.</p>
+  <header class="hero">
+    <img class="logo" src="images/logo_2027.svg" alt="RAID 2027">
+    <p class="location">Chicago, Illinois, USA</p>
+    <p class="subtitle">The 30th International Symposium on Research in Attacks, Intrusions and Defenses.</p>
+    <img class="hero-image" src="images/chicago-lakefront.jpg" alt="Chicago skyline and Lake Michigan at dusk">
+    <nav class="tabs" role="tablist" aria-label="Conference sections">
+      <button class="tab" type="button" role="tab" id="tab-home" aria-controls="home" aria-selected="true">Home</button>
+      <button class="tab" type="button" role="tab" id="tab-sponsorship" aria-controls="sponsorship" aria-selected="false" tabindex="-1">Call for Sponsorship</button>
+      <button class="tab" type="button" role="tab" id="tab-papers" aria-controls="papers" aria-selected="false" tabindex="-1">Call for Papers</button>
+      <button class="tab" type="button" role="tab" id="tab-committee" aria-controls="committee" aria-selected="false" tabindex="-1">Committee</button>
+      <button class="tab" type="button" role="tab" id="tab-contact" aria-controls="contact" aria-selected="false" tabindex="-1">Contact</button>
+    </nav>
+  </header>
+  <main>
+    <section class="panel" id="home" role="tabpanel" aria-labelledby="tab-home" tabindex="0">
+      <h1>Welcome to RAID 2027</h1>
+      <p>RAID brings together researchers and practitioners from academia, industry, and government to share research on attacks, intrusions, and defenses.</p>
+      <p>The 30th symposium will be held in Chicago. More details will be announced here as they become available.</p>
+    </section>
+    <section class="panel" id="sponsorship" role="tabpanel" aria-labelledby="tab-sponsorship" tabindex="0" hidden>
+      <h1>Call for Sponsorship</h1><p>Sponsorship information for RAID 2027 will be announced soon.</p>
+    </section>
+    <section class="panel" id="papers" role="tabpanel" aria-labelledby="tab-papers" tabindex="0" hidden>
+      <h1>Call for Papers</h1><p>The RAID 2027 call for papers will be announced soon.</p>
+    </section>
+    <section class="panel" id="committee" role="tabpanel" aria-labelledby="tab-committee" tabindex="0" hidden>
+      <h1>Committee</h1><p>RAID 2027 committee information will be announced soon.</p>
+    </section>
+    <section class="panel" id="contact" role="tabpanel" aria-labelledby="tab-contact" tabindex="0" hidden>
+      <h1>Contact</h1><p>Contact information for RAID 2027 will be announced soon.</p>
+    </section>
+  </main>
+  <footer>Chicago photo by <a href="https://commons.wikimedia.org/wiki/File:Chicago_Lakefront.jpg">Daniel Schwen / Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</footer>
+  <script>
+    const tabs = [...document.querySelectorAll('[role="tab"]')];
+    const panels = [...document.querySelectorAll('[role="tabpanel"]')];
+    function showTab(id, updateHash = true) {
+      const tab = tabs.find(item => item.getAttribute('aria-controls') === id) || tabs[0];
+      tabs.forEach(item => {
+        const selected = item === tab;
+        item.setAttribute('aria-selected', String(selected));
+        item.tabIndex = selected ? 0 : -1;
+      });
+      panels.forEach(panel => { panel.hidden = panel.id !== tab.getAttribute('aria-controls'); });
+      if (updateHash) history.replaceState(null, '', '#' + tab.getAttribute('aria-controls'));
+    }
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => showTab(tab.getAttribute('aria-controls')));
+      tab.addEventListener('keydown', event => {
+        const next = event.key === 'ArrowRight' ? index + 1 : event.key === 'ArrowLeft' ? index - 1 : null;
+        if (next === null) return;
+        event.preventDefault();
+        const target = tabs[(next + tabs.length) % tabs.length];
+        showTab(target.getAttribute('aria-controls'));
+        target.focus();
+      });
+    });
+    showTab(location.hash.slice(1), false);
+    window.addEventListener('hashchange', () => showTab(location.hash.slice(1), false));
+  </script>
 </body>
 </html>

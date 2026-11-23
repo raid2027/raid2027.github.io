@@ -28,8 +28,9 @@
     .table-wrap { overflow-x: auto; }
     .committee-table { width: 100%; min-width: 650px; border-collapse: collapse; text-align: left; }
     .committee-table th, .committee-table td { padding: 12px 14px; border-bottom: 1px solid #d8dee5; vertical-align: top; }
-    .committee-table thead th { color: #293442; font-weight: 700; }
-    .committee-table .role-row th { padding-top: 20px; color: #9d2323; background: #f7f9fb; }
+    .committee-table th[scope="row"] { width: 25%; color: #293442; font-weight: 600; }
+    .committee-table td:nth-child(2) { width: 40%; }
+    .committee-table td:nth-child(3) { width: 35%; }
     .committee-table a { overflow-wrap: anywhere; }
     @media (max-width: 600px) {
       .hero { margin: 0; padding: 16px 12px 20px; border-radius: 0; }
@@ -70,13 +71,10 @@
       <h1>Committee</h1>
       <h2>Organizing Committee</h2>
       <div class="table-wrap">
-        <table class="committee-table">
-          <thead><tr><th scope="col">Name</th><th scope="col">Affiliation</th><th scope="col">Email</th></tr></thead>
+        <table class="committee-table" aria-label="Organizing Committee">
           <tbody>
-            <tr class="role-row"><th colspan="3" scope="rowgroup">General Chairs</th></tr>
-            <tr><td>Bo Chen</td><td>Michigan Technological University</td><td><a href="mailto:raid27.general.chairs@gmail.com">raid27.general.chairs@gmail.com</a></td></tr>
-            <tr class="role-row"><th colspan="3" scope="rowgroup">PC Chair</th></tr>
-            <tr><td>—</td><td>—</td><td><a href="mailto:raid27.pc.chairs@gmail.com">raid27.pc.chairs@gmail.com</a></td></tr>
+            <tr><th scope="row">General Chairs</th><td>Bo Chen, Michigan Technological University</td><td><a href="mailto:raid27.general.chairs@gmail.com">raid27.general.chairs@gmail.com</a></td></tr>
+            <tr><th scope="row">PC Chair</th><td>To be announced</td><td><a href="mailto:raid27.pc.chairs@gmail.com">raid27.pc.chairs@gmail.com</a></td></tr>
           </tbody>
         </table>
       </div>

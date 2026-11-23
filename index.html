@@ -26,12 +26,11 @@
     .panel h2 { margin: 28px 0 12px; color: #293442; font-size: 1.4rem; }
     .panel p { max-width: 850px; margin: 0 0 14px; }
     .table-wrap { overflow-x: auto; }
-    .committee-table { width: 100%; min-width: 650px; border-collapse: collapse; text-align: left; }
+    .committee-table { width: 100%; border-collapse: collapse; text-align: left; }
     .committee-table th, .committee-table td { padding: 12px 14px; border-bottom: 1px solid #d8dee5; vertical-align: top; }
-    .committee-table th[scope="row"] { width: 25%; color: #293442; font-weight: 600; }
-    .committee-table td:nth-child(2) { width: 40%; }
-    .committee-table td:nth-child(3) { width: 35%; }
-    .committee-table a { overflow-wrap: anywhere; }
+    .committee-table th[scope="row"] { width: 28%; color: #293442; font-weight: 600; }
+    .committee-table .member { display: block; }
+    .committee-table .member + .member { margin-top: 4px; }
     @media (max-width: 600px) {
       .hero { margin: 0; padding: 16px 12px 20px; border-radius: 0; }
       .logo { width: min(100%, 360px); margin-bottom: 16px; }
@@ -73,8 +72,13 @@
       <div class="table-wrap">
         <table class="committee-table" aria-label="Organizing Committee">
           <tbody>
-            <tr><th scope="row">General Chairs</th><td>Bo Chen, Michigan Technological University</td><td><a href="mailto:raid27.general.chairs@gmail.com">raid27.general.chairs@gmail.com</a></td></tr>
-            <tr><th scope="row">PC Chair</th><td>To be announced</td><td><a href="mailto:raid27.pc.chairs@gmail.com">raid27.pc.chairs@gmail.com</a></td></tr>
+            <tr><th scope="row">General Chairs</th><td><span class="member">Bo Chen (Michigan Technological University, USA)</span><span class="member">Filipo Sharevski (DePaul University, USA)</span><span class="member">Zhiqiang Lin (The Ohio State University, USA)</span></td></tr>
+            <tr><th scope="row">Program Committee Chairs</th><td><span class="member">Vasileios P. Kemerlis (Brown University, USA)</span><span class="member">Cristiano Giuffrida (VU Amsterdam, Netherlands)</span></td></tr>
+            <tr><th scope="row">Publication Chair</th><td>Niusen Chen (University of Nevada, Reno, USA)</td></tr>
+            <tr><th scope="row">Publicity Chairs</th><td><span class="member">Denis Donadel (Fondazione Bruno Kessler, Italy)</span><span class="member">Yazhou Tu (Auburn University, USA)</span><span class="member">Yuqing Zhang (University of Chinese Academy of Sciences, China)</span></td></tr>
+            <tr><th scope="row">Poster Chairs</th><td><span class="member">Taeho Jung (University of Notre Dame, USA)</span><span class="member">Seonghun Son (Mercer University, USA)</span></td></tr>
+            <tr><th scope="row">Registration Chair</th><td>Kaichen Yang (Michigan Technological University, USA)</td></tr>
+            <tr><th scope="row">Web Chairs</th><td><span class="member">Yunlong Xing (Michigan Technological University, USA)</span><span class="member">Qiang Han (Michigan Technological University, USA)</span></td></tr>
           </tbody>
         </table>
       </div>
@@ -82,7 +86,9 @@
       <p>Members to be announced.</p>
     </section>
     <section class="panel" id="contact" role="tabpanel" aria-labelledby="tab-contact" tabindex="0" hidden>
-      <h1>Contact</h1><p>For general inquiries, please contact the General Chairs at <a href="mailto:raid27.general.chairs@gmail.com">raid27.general.chairs@gmail.com</a>.</p>
+      <h1>Contact</h1>
+      <p>General Chairs: <a href="mailto:raid27.general.chairs@gmail.com">raid27.general.chairs@gmail.com</a></p>
+      <p>Program Committee Chairs: <a href="mailto:raid27.pc.chairs@gmail.com">raid27.pc.chairs@gmail.com</a></p>
     </section>
   </main>
   <script>
